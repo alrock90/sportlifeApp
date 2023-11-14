@@ -1,0 +1,22 @@
+.fieldbox{    
+    display: flex;
+    border: 2px solid green ;
+    height: 20vh; /* Establece la altura según tus necesidades */
+    aspect-ratio: 3 / 4; /* Establece la relación de aspecto (width: 3 * height / 4) */
+    max-width: 70%;    
+    overflow: hidden;
+    position: relative;
+}
+
+.playerField{
+    border: 2px solid green ;
+    position: relative;
+    width: 80%;
+    height: 80%;
+}
+
+.player{
+    width: 10%;
+    height: 10%;
+    position: absolute;
+}
