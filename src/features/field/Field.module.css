@@ -3,7 +3,7 @@
     border: 2px solid green ;
     height: 20vh; /* Establece la altura según tus necesidades */
     aspect-ratio: 3 / 4; /* Establece la relación de aspecto (width: 3 * height / 4) */
-    max-width: 70%;    
+    max-width: 20rem;    
     overflow: hidden;
     position: relative;
 }
@@ -11,8 +11,9 @@
 .playerField{
     border: 2px solid green ;
     position: relative;
+    max-width: 40rem; 
     width: 80%;
-    height: 80%;
+    height: 90%;
 }
 
 .player{

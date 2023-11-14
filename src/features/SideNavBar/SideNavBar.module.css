@@ -6,7 +6,7 @@
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
   padding-left: 0.5rem;
   margin-top: 1.5rem;
-  border-radius: 0.5rem;
+  border-radius:0 0.5rem 0.5rem 0;
   min-width: 4rem;
   max-width: 14.18rem;
 }
@@ -18,25 +18,6 @@
 .sideBarContainer {
   display: flex;
   flex-direction: column;  
-}
-@media screen and (max-width: 768px) {
-  .sideNavBar {   
-    background-color:red;
-    margin-top: 0.5rem;
-    left: 0rem;  
-    display: flex;
-    flex-direction: column;    
-    width: 50rem;
-    padding:0;
-  }
-
-
-
-
-  .sideBarContainer {
-    display: flex;
-    flex-direction: row;  
-  }
 }
 
 .sideOptionNav {
@@ -120,16 +101,17 @@
   /* Comienza mirando hacia la derecha (180 grados) */
 }
 
-/* Clase para expandir el navbar */
+/* Clase para expandir el navbar ****************************************/
 .navEnter {
   width: 4rem;
   overflow: hidden;
 }
 
+
 .navEnterActive {
   width: 14.18rem;
   /* Ancho final cuando se expande */
-  transition: width 300ms;
+  transition: width 500ms;
 }
 
 /* Clase para contraer el navbar */
@@ -142,5 +124,96 @@
 .navExitActive {
   width: 4rem;
   /* Ancho final cuando se contrae */
-  transition: width 300ms;
+  transition: width 500ms;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .sideNavBar {   
+    background-color: #B2C8BA;
+    margin-top: 0.5rem;
+    left: 0rem;      
+    width: 100%;
+    height: 10.0625rem;
+    padding:0;
+    max-width: none;
+    border-radius:0.5rem 0.5rem 0 0;
+  } 
+
+  .sideBarContainer {
+    display: flex;
+    flex-direction: row;  
+    flex-wrap: wrap;
+  }
+
+
+/* Clase para rotar el botón */
+.enter {
+  transform: rotate(-90deg);
+  /* Comienza mirando hacia la izquierda (0 grados) */
+}
+
+.enterActive {
+  transform: rotate(450deg);
+  /* Gira hacia la derecha (180 grados) */
+  transition: transform 500ms;
+}
+
+.enterDone {
+  transform: rotate(450deg);
+  /* Comienza mirando hacia la izquierda (0 grados) */
+}
+
+.exit {
+  transform: rotate(450deg);
+  /* Comienza mirando hacia la derecha (180 grados) */
+}
+
+.exitActive {
+  transform: rotate(-90deg);
+  /* Gira hacia la izquierda (180 grados) */
+  transition: transform 500ms;
+}
+
+.exitDone {
+  transform: rotate(-90deg);
+  /* Comienza mirando hacia la derecha (180 grados) */
+}
+
+/* Clase para expandir el navbar ****************************************/
+.navEnter {
+  height: 4rem;
+  overflow: hidden;
+}
+
+.navEnterActive {
+  height: 20rem;
+  /* Ancho final cuando se expande */
+  transition: height 500ms;
+}
+.navEnterDone {
+  height: 20rem;
+  /* Ancho final cuando se expande */
+  
+}
+
+/* Clase para contraer el navbar */
+.navExit {
+  height: 20rem;
+  /* Ancho inicial cuando se contrae */
+  overflow: hidden;
+}
+
+.navExitActive {
+  height: 10.0625rem;
+  /* Ancho final cuando se contrae */
+  transition: height 500ms;
+}
+.navExitActive {
+  height: 10.0625rem;
+  /* Ancho final cuando se contrae */
+  
+}
+
 }

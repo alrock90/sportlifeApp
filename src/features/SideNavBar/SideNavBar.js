@@ -50,6 +50,34 @@ export const SideNavBar = () => {
                     {navBarActive && <p>display_name</p>}
                     
                 </button>
+                <button onClick={() => onClickTopic()} className={Styles.sideOptionNav}>
+                    <div className={Styles.imgtitle}>
+                        {<FaReddit className={Styles.icon} />}
+                    </div>
+                    {navBarActive && <p>display_name</p>}
+                    
+                </button>
+                <button onClick={() => onClickTopic()} className={Styles.sideOptionNav}>
+                    <div className={Styles.imgtitle}>
+                        {<FaReddit className={Styles.icon} />}
+                    </div>
+                    {navBarActive && <p>display_name</p>}
+                    
+                </button>
+                <button onClick={() => onClickTopic()} className={Styles.sideOptionNav}>
+                    <div className={Styles.imgtitle}>
+                        {<FaReddit className={Styles.icon} />}
+                    </div>
+                    {navBarActive && <p>display_name</p>}
+                    
+                </button>
+                <button onClick={() => onClickTopic()} className={Styles.sideOptionNav}>
+                    <div className={Styles.imgtitle}>
+                        {<FaReddit className={Styles.icon} />}
+                    </div>
+                    {navBarActive && <p>display_name</p>}
+                    
+                </button>
                 
 
             </div>
@@ -69,10 +97,12 @@ export const SideNavBar = () => {
             nodeRef={nodeRef2}
             timeout={500}
             classNames={{
+                enterDone: Styles.navEnterDone,
                 enter: Styles.navEnter,
                 enterActive: Styles.navEnterActive,
                 exitActive: Styles.navExitActive,
                 exit: Styles.navExit,
+                exitDone: Styles.navExitDone,
             }}>
             <nav className={Styles.sideNavBar} ref={nodeRef2}>
                 <CSSTransition
