@@ -76,6 +76,7 @@ export function Field() {
     return (
        // <div className={Styles.fieldbox}>
             <svg className={Styles.playerField} id="parent" >
+                <image href='https://i.pinimg.com/originals/f7/5c/cb/f75ccb7397dfa9d17136fe6b27c5f176.png' x="0" y="0" width="100%" height="100%" />
                 {positions.map((position, index) => {
                     return (
                         <circle
